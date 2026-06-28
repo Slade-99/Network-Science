@@ -1,0 +1,27 @@
+Details about the  E Coli Metabolism Network
+
+This network contains the nodes which are the metabolites and the arrows represents metabolic reactions that converts
+a reactant into the product. Hence, it is a directed graph. All these metabolic reactions are happenining inside the 
+Escherichia coli baterium and this is why the network is named as E Coli Metabolism network.
+
+There are 1039 nodes representing ( metabolites/chemicals )
+There are 5802 links representing ( nodes participating in a chemical reaction )
+
+Now if we want to analyze the sparsity of this graph and because it is a directed graph so the 
+ratio of link / (total_possible_link)  should be:
+
+    5802
+------------  =  0.00538
+1039(1039-1)
+
+Hence we can conclude that this is a very sparse graph
+
+
+Further statistics from Gephy tool:
+
+Average Degree: 5.584
+Diameter: 8
+Average Path Length: 2.975
+Strongly Connected Components: 147
+Average Clustering Coefficient: 0.276
+
