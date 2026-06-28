@@ -7,6 +7,8 @@ Escherichia coli baterium and this is why the network is named as E Coli Metabol
 There are 1039 nodes representing ( metabolites/chemicals )
 There are 5802 links representing ( nodes participating in a chemical reaction )
 
+N = 1039 , L = 5802
+
 Now if we want to analyze the sparsity of this graph and because it is a directed graph so the 
 ratio of link / (total_possible_link)  should be:
 
@@ -24,4 +26,17 @@ Diameter: 8
 Average Path Length: 2.975
 Strongly Connected Components: 147
 Average Clustering Coefficient: 0.276
+
+
+With all these details now if we compare with the random network model:
+The value of ln(N) / ln(<k>)  =  ln(1039) / ln(5.584)  =  4.04
+
+Hence the value is different from the actual average path length which is 2.975
+
+Furthermore, clustering coefficient of a random network would be <k> / N =  5.584/1039 = 0.00537
+
+This value is also deviates significantly from the average clustering coefficient of the network which is 0.276
+
+Hence this E Coli Metabolism network does not follow the Random Network model.
+
 
